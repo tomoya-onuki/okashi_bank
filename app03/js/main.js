@@ -193,7 +193,8 @@ $(function () {
                 var rY = 90 - e.beta ;
                 var rX = - e.gamma;
         
-                $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
+                // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
+                $('#v_model').attr("camera-orbit", rZ+"deg "+rY+"deg 0%");
             });
         }
     }).catch(function (e) {
