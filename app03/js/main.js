@@ -194,7 +194,7 @@ $(function () {
                 var rX = - e.gamma;
         
                 // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
-                $('#v_model').attr("camera-orbit", rZ+"deg "+rY+"deg 0%");
+                $('#v_model').attr("camera-orbit", rZ+"deg "+rY+"deg 100%");
             });
         }
     }).catch(function (e) {
