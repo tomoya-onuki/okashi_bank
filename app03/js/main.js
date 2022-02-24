@@ -10,7 +10,7 @@ $(function () {
     ]
     let model_idx = 0;
 
-    $('#splash').fadeOut(2000);
+    // $('#splash').fadeOut(2000);
     // initModel();
     // $('#v_model').activateAR();
 
