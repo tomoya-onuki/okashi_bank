@@ -38,19 +38,31 @@ $(function () {
         updateModel();
     });
 
-
-    $('#ar_model').on('click', function () {
-        console.log("grab!");
+    $('.ar_model').each(function () {
+        $(this).on('click', function () {
+            console.log("grab!");
+        });
     });
+
+    AFRAME.registerComponent('cursor-listener', {
+        init: function () {
+            this.el.addEventListener('click', function (event) {
+                //クリック時の処理
+                console.log("grab!!");
+            });
+        }
+    });
+
 
 
     function initModel() {
         for (let i = 0; i < numOfModel[model_idx]; i++) {
-            let x = Math.random(-10, 10);
-            let y = Math.random(-10, 10);
-            let z = Math.random(-10, 10);
+            let x = Math.random(-20, 20);
+            let y = Math.random(-20, 20);
+            let z = Math.random(-20, 20);
             let r = Math.round(Math.random(1)) * 90;
-            let elem = '<a-entity class="ar_model" position="' + x + ' 0 ' + z + '" rotation="0 '+r+' 0" scale="2 2 2" gltf-model="./obj/koala.glb"></a-entity>';
+            let elem = '<a-entity class="ar_model" position="' + x + ' ' + y + ' 0" rotation="-90 ' + r + ' 0" scale="2 2 2" gltf-model="./obj/koala.glb"></a-entity>';
+            // let elem = '<a-entity class="ar_model" position="' + x + ' 0 ' + z + '" rotation="0 '+r+' 0" scale="2 2 2" gltf-model="./obj/koala.glb"></a-entity>';
             $('#a-marker').append(elem);
         }
     }
@@ -61,4 +73,40 @@ $(function () {
             $(this).attr('gltf-model', './obj/' + model[model_idx]);
         });
     }
+
+
+    let isDown = false;
+    let _x = 0;
+    let _y = 0;
+    $(window).on('mousedown', function (e) {
+        isDown = true;
+        _x = e.offsetX;
+        _y = e.offsetY;
+    })
+        .on('mousemove', function (e) {
+            if (isDown) {
+                let x = Number($('#move').attr('position').x);
+                let y = Number($('#move').attr('position').y);
+                
+                let dx = (e.offsetX - _x) / 1000;
+                let dy = (e.offsetY - _y) / 1000;
+                // console.log(dx, dy);
+                
+                let newPos = String(x + dx) + ' ' + String(y - dy) + ' 0';
+                console.log(newPos);
+                $('#move').attr('position', newPos);
+            }
+        })
+        .on('mouseup', function (e) {
+            isDown = false;
+            _x = 0;
+            _x = 0;
+        });
+
+});
+
+
+
+window.addEventListener("mousedown", function (ret) {
+
 });
