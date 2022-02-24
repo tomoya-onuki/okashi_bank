@@ -12,9 +12,14 @@ $(function () {
 
     $('#splash').fadeOut(2000);
     // initModel();
-    $('#v_model').activateAR();
+    // $('#v_model').activateAR();
 
-
+    // console.log($('#v_model').attr("orientation"));
+    // $('#v_model').attr("orientation", "90deg 10deg 10deg");
+    // let rX = 90;
+    // let rY = 90;
+    // let rZ = 90;
+    // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
 
 
     $('.buy_btn').each(function () {
@@ -188,7 +193,7 @@ $(function () {
                 var rX = e.beta;
                 var rY = e.gamma;
         
-                // $('#model_label').text(rX+", "+rY+", "+rZ);
+                $('#model_label').text(rX+", "+rY+", "+rZ);
                 $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
             });
         }
