@@ -109,6 +109,15 @@ button {
     width: 30%;
 }
 
+#link_shop {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    /* right: 20px; */
+
+    width: 30%;
+}
+
 #ar_mov {
     position: fixed;
     top: 50%;
@@ -135,6 +144,9 @@ button {
     width: 100vw;
     height: 100vh;
     background: #fff;
+
+    z-index: 4;
+    opacity: 0.8;
 
     /* text-align: center; */
 }
@@ -173,7 +185,7 @@ button {
 }
 #ar_modal_esc {
     position: relative;
-    top: 10px;
+    top: 30px;
     left: calc(100vw - 40px);
     cursor: pointer;
 }
