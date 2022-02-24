@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOTTE お菓子銀行</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="../app/AR-js/aframe/build/aframe-ar.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- <link rel="stylesheet" href="../app/style.css"> -->
+    <link rel="stylesheet" href="../app02/style.css">
     <script src="./js/main.js"></script>
 </head>
 
@@ -18,9 +23,13 @@
     </div>
 
     <div id="ar_mov">
+        <a-scene vr-mode-ui="enabled: false">
+            <a-entity camera></a-entity>
+        </a-scene>
+        <model-viewer id="v_model" src="../app/obj/koala.glb" controls auto-rotate ar></model-viewer>
     </div>
     <!-- <div id="ar_share">share(仮ボタン)</div> -->
-
+    <div id="model_label">コアラのマーチ</div>
 
     <div id="ar_modal">
         <div id="ar_modal_esc">×</div>
@@ -53,15 +62,15 @@
     <img id="splash" src="./res/splash.png" alt="">
 
 
+
     <button id="left_btn" class="ellipse">left</button>
     <button id="right_btn" class="ellipse">right</button>
     <button id="share_btn" class="ellipse">share</button>
 
     <div>
-        <a id="link_shop" href="shop.html">
-            お菓子購入へ(仮)
+        <a id="link_shop" href="shop.html">〈 お菓子購入へ</a>
             <!-- <img src="./res/back.png" alt=""> -->
-        </a>
+        
     </div>
 </body>
 

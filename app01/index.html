@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOTTE お菓子銀行</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="../app/AR-js/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="../app/js/main.js"></script>
     <script src="./js/main.js"></script>
 </head>
 
@@ -18,8 +21,14 @@
     </div>
 
     <div id="ar_mov">
+        <a-scene embedded arjs="debugUIEnabled: false" vr-mode-ui="enabled: false">
+            <a-marker id="a-marker" type="pattern" url="pattern-marker.patt">
+                    <a-entity cursor-listener id="move" class="ar_model" position="0 0 0" rotation="0 0 0" scale="2 2 2" gltf-model="../app/obj/koala.glb"></a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
     </div>
-    <!-- <div id="ar_share">share(仮ボタン)</div> -->
+    <div id="ar_share">share(仮ボタン)</div>
 
 
     <div id="ar_modal">
@@ -52,10 +61,6 @@
 
     <img id="splash" src="./res/splash.png" alt="">
 
-
-    <button id="left_btn" class="ellipse">left</button>
-    <button id="right_btn" class="ellipse">right</button>
-    <button id="share_btn" class="ellipse">share</button>
 
     <div>
         <a id="link_shop" href="shop.html">

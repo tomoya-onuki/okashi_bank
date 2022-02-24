@@ -116,23 +116,12 @@ button {
 }
 
 #link_shop {
-    text-decoration: none;
     position: fixed;
-    /* bottom: 40px;
-    left: 20px; */
-    top: 100px;
-    left: 10px;
-    width: 80px;
-    height: 10px;
-    font-size: 55%;
-    text-align: center;
-    padding: 5px 5px 5px 5px;
-    color: #fff;
+    bottom: 40px;
+    left: 20px;
+    /* right: 20px; */
 
-    background: #847777;
-    border: #847777 solid 1px;
-    border-radius:20px;
-
+    width: 30%;
 }
 
 #ar_mov {
@@ -160,10 +149,10 @@ button {
 
     width: 100vw;
     height: 100vh;
-    background: rgba(255,255,255,0.5);
+    background: #fff;
 
     z-index: 4;
-    /* opacity: 0.8; */
+    opacity: 0.8;
 
     /* text-align: center; */
 }
@@ -217,63 +206,4 @@ button {
 
     z-index: 10;
     background: #fff;
-}
-
-
-#left_btn {
-    position: fixed;
-    bottom: 50px;
-    /* left: 50px; */
-    left: 20px;
-
-    background-color: #847777;
-    text-align: center;
-}
-
-#right_btn {
-    position: fixed;
-    bottom: 50px;
-    /* left: 170px; */
-    right: 20px;
-
-    background-color: #847777;
-    text-align: center;
-}
-
-#share_btn {
-    position: fixed;
-    bottom: 50px;
-    left:50%; 
-    transform: translate(-50%, 0);
-    
-    background-color: #847777;
-    text-align: center;
-}
-.ellipse {
-    border: #847777 solid 1px;
-    border-radius: 50%;
-    cursor: pointer;
-    color: #fff;
-    width: 80px;
-    height: 80px;
-}
-
-#v_model {
-    cursor: pointer;
-}
-
-#model_label {
-    position: fixed;
-    top: 30%;
-    left: 50%; 
-    transform: translate(-50%, 0%);
-    z-index: 4;
-
-    width: 200px;
-    text-align: center;
-    padding: 5px 5px 5px 5px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
-
-    counter-reset: #4f4f4f;
 }

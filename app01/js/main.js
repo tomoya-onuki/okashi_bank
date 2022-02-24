@@ -29,7 +29,7 @@ $(function() {
     });
 
 
-    $('#share_btn').on('click', function () {
+    $('#ar_share').on('click', function () {
         $('#ar_modal').fadeIn();
     });
     $('#ar_modal_esc').on('click', function () {
