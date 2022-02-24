@@ -184,7 +184,7 @@ $(function () {
         var rX = e.beta;
         var rY = e.gamma;
 
-        c$('#model_label').text(rX+", "+rY+", "+rZ);
+        $('#model_label').text(rX+", "+rY+", "+rZ);
     });
 
 });
