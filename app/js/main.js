@@ -13,6 +13,7 @@ $(function () {
     //     // }
     // });
     $('#ar_model').attr('gltf-model', './obj/' + model[model_idx]);
+    $('#v_model').attr('src', './obj/' + model[model_idx]);
 
     $('#left_btn').on('click', function () {
         console.log(model_idx);
@@ -22,6 +23,7 @@ $(function () {
             model_idx = 0;
         }
         $('#ar_model').attr('gltf-model', './obj/' + model[model_idx]);
+        $('#v_model').attr('src', './obj/' + model[model_idx]);
     });
     $('#right_btn').on('click', function () {
         console.log(model_idx);
@@ -31,5 +33,6 @@ $(function () {
             model_idx = model.length - 1;
         }
         $('#ar_model').attr('gltf-model', './obj/' + model[model_idx]);
+        $('#v_model').attr('src', './obj/' + model[model_idx]);
     });
 });

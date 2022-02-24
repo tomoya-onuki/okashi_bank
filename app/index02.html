@@ -1,12 +1,28 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <meta charset="UTF-8"> 
-    <meta name='viewport' content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'> 
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script> 
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> 
-  </head> 
-  <body>
-    <model-viewer src="./obj/koala.glb" controls auto-rotate ar></model-viewer> 
-  </body> 
-</html> 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a-scene>
+        <a-entity camera></a-entity>
+    </a-scene>
+
+    <model-viewer id="v_model" src="./obj/koala.glb" controls auto-rotate ar></model-viewer>
+    <button id="left_btn" class="ellipse">left</button>
+    <button id="right_btn" class="ellipse">right</button>
+    <button id="share_btn" class="ellipse">share</button>
+</body>
+
+</html>

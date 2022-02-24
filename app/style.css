@@ -1,19 +1,15 @@
-.btn {
-    position: fixed;
-    top: 100px;
-    left: 10px;
-
-    width: 100px;
-    height: 100px;
-
-    background: #fff;
+body {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-.sweets_model {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: none;
+
+    font-size: 160%;
 }
 
 #ar_model {
@@ -28,8 +24,10 @@
     width: 100px;
     height: 100px;
 
+    background-color: #fff;
     text-align: center;
 }
+
 #right_btn {
     position: fixed;
     bottom: 50px;
@@ -38,5 +36,34 @@
     width: 100px;
     height: 100px;
 
+    background-color: #fff;
     text-align: center;
+}
+
+#share_btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+
+    height: 100px;
+
+    background-color: #fff;
+    text-align: center;
+}
+.ellipse {
+    border: #fff solid 1px;
+    border-radius: 50%;
+}
+
+.a-enter-vr-button {
+    display: none;
+}
+
+#v_model {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
