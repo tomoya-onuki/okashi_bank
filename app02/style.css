@@ -99,7 +99,7 @@ button {
 #buy_modal_esc {
     /* position: relative; */
     margin-bottom: 10px;
-
+    font-size: 150%;
     cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ button {
     border: #847777 solid 1px;
     border-radius:20px;
 
-    z-index: 6;
+    z-index: 4;
 
 }
 
@@ -164,7 +164,7 @@ button {
     height: 100vh;
     background: rgba(255,255,255,0.5);
 
-    z-index: 4;
+    z-index: 5;
     /* opacity: 0.8; */
 
     /* text-align: center; */
@@ -207,6 +207,7 @@ button {
     top: 30px;
     left: calc(100vw - 40px);
     cursor: pointer;
+    font-size: 150%;
 }
 
 
