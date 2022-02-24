@@ -104,9 +104,3 @@ $(function () {
         });
 
 });
-
-
-
-window.addEventListener("mousedown", function (ret) {
-
-});
