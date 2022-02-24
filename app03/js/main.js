@@ -192,8 +192,8 @@ $(function () {
                 // var rZ = e.alpha * 2;
                 // var rY = 90 - e.beta ;
                 // var rX = - e.gamma;
-                var rZ = e.alpha * 3;
-                var rY = e.beta - 90;
+                var rZ = e.alpha;
+                var rY = 90 - e.beta;
         
                 // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
                 $('#v_model').attr("camera-orbit", rZ+"deg "+rY+"deg 100%");
