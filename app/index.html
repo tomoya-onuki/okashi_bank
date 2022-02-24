@@ -8,7 +8,7 @@
     <title>お菓子銀行 | </title>
     <link rel="stylesheet" href="style.css">
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="./AR-js/aframe/build/aframe-ar.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script> 
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,14 +20,15 @@
         <!-- <a-assets>
             <a-asset-item id="obj" src="./obj/human.obj"></a-asset-item>
         </a-assets> -->
-        <!-- <a-marker preset="hiro"> -->
+        <a-marker preset="hiro">
+        <!-- <a-marker type="pattern" url="pattern-marker.patt"> -->
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <!-- <a-entity position="0 -1 0" scale="0.05 0.05 0.05" gltf-model="./obj/human.obj"></a-entity> -->
             <!-- <a-obj-model src="#obj" rotation="" scale="0.5 0.5 0.5" position="0 1.0 0"> -->
             <!-- <a-animation attribute="rotation" to="0 360 0" dur="3000" easing="linear" repeat="indefinite"></a-animation> -->
             <!-- </a-obj-model> -->
-        <!-- </a-marker> -->
-        <a-entity id="ar_model" position="0 0 0" rotation="0 0 0" scale="5 5 5" gltf-model="./obj/koala.glb"></a-entity>
+            <a-entity id="ar_model" position="0 0 0" rotation="-60 0 0" scale="5 5 5" gltf-model="./obj/koala.glb"></a-entity>
+        </a-marker>
         <!-- <a-entity id="ar_model" position="0 0 0" rotation="0 0 0" scale="5 5 5" gltf-model="./obj/koala.glb"></a-entity> -->
         <!-- <a-obj-model src="#obj" scale="1 1 1" position="0 1.0 0"></a-obj-model> -->
         <!-- <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box> -->
