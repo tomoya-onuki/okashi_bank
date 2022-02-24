@@ -42,7 +42,7 @@ $(function () {
 
     $('.human').each(function () {
         $(this).on('click', function () {
-            alert("なんらかのシェア方法")
+            alert("お菓子をシェアしました")
         });
     });
 
