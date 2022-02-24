@@ -189,7 +189,7 @@ $(function () {
                 var rY = e.gamma;
         
                 // $('#model_label').text(rX+", "+rY+", "+rZ);
-                $('#v_model').attr("orientation", "("+rX+"deg, "+rY+"deg, "+rZ+"deg)");
+                $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
             });
         }
     }).catch(function (e) {
