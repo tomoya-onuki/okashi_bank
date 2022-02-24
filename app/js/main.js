@@ -7,7 +7,7 @@ $(function () {
     ];
 
     let model_idx = 0;
-    // initModel();
+    initModel();
 
     // $('.ar_model').each( function(idx) {
     //     // if (idx === 0) {
