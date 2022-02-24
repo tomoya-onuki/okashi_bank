@@ -178,13 +178,21 @@ $(function () {
 
 
 
-    window.addEventListener("deviceorientation", function (e) {
-        var absolute = e.absolute;
-        var rZ = e.alpha;
-        var rX = e.beta;
-        var rY = e.gamma;
+   
 
-        $('#model_label').text(rX+", "+rY+", "+rZ);
+    DeviceOrientationEvent.requestPermission().then(function (response) {
+        if (response === 'granted') {
+            window.addEventListener("deviceorientation", function (e) {
+                var absolute = e.absolute;
+                var rZ = e.alpha;
+                var rX = e.beta;
+                var rY = e.gamma;
+        
+                $('#model_label').text(rX+", "+rY+", "+rZ);
+            });
+        }
+    }).catch(function (e) {
+        console.log(e);
     });
 
 });
