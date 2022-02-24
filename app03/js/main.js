@@ -190,12 +190,12 @@ $(function () {
             window.addEventListener("deviceorientation", function (e) {
                 var absolute = e.absolute;
                 var rZ = e.alpha;
-                var rX = e.beta;
-                var rY = e.gamma;
+                var rY = 90 -1 * e.beta;
+                var rX = e.gamma;
         
                 $('#model_label').text(rX+", "+rY+", "+rZ);
                 // $('#v_model').attr("orientation", rX+"deg 0 0");
-                $('#v_model').attr("orientation", "0deg "+rX+"deg 0deg");
+                // $('#v_model').attr("orientation", "0deg "+rY+"deg 0deg");
                 // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
             });
         }
