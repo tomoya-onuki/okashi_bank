@@ -12,14 +12,15 @@ button {
     font-size: 160%;
 }
 
-#ar_model {
+.ar_model {
     display: none;
 }
 
 #left_btn {
     position: fixed;
     bottom: 50px;
-    left: 50px;
+    /* left: 50px; */
+    left: calc(30% - 50px);
 
     width: 100px;
     height: 100px;
@@ -31,7 +32,8 @@ button {
 #right_btn {
     position: fixed;
     bottom: 50px;
-    left: 170px;
+    /* left: 170px; */
+    left: calc(60% - 50px);
 
     width: 100px;
     height: 100px;
@@ -43,7 +45,7 @@ button {
 #share_btn {
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: calc(30% - 50px);
     width: 100px;
 
     height: 100px;
