@@ -175,4 +175,16 @@ $(function () {
         $('#ar_modal').fadeOut();
         $('#share_btn').css('opacity', 1.0);
     });
+
+
+
+    window.addEventListener("deviceorientation", function (e) {
+        var absolute = e.absolute;
+        var rZ = e.alpha;
+        var rX = e.beta;
+        var rY = e.gamma;
+
+        c$('#model_label').text(rX+", "+rY+", "+rZ);
+    });
+
 });
