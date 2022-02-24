@@ -195,3 +195,15 @@ button {
     left: calc(100vw - 40px);
     cursor: pointer;
 }
+
+
+#splash {
+    width:100vw;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+    background: #fff;
+}

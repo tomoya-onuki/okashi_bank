@@ -1,4 +1,7 @@
 $(function() {
+    $('#splash').fadeOut(2000);
+
+
     $('.buy_btn').each(function() {
         $(this).on('click', function () {
             $('#buy_modal').fadeIn();
@@ -8,6 +11,7 @@ $(function() {
     $('#buy_modal_esc').on('click', function () {
         $('#buy_modal').fadeOut();
     });
+
     
 
 
@@ -31,5 +35,4 @@ $(function() {
     $('#ar_modal_esc').on('click', function () {
         $('#ar_modal').fadeOut();
     });
-
 });
