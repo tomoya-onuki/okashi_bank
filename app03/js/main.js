@@ -194,7 +194,8 @@ $(function () {
                 var rY = e.gamma;
         
                 $('#model_label').text(rX+", "+rY+", "+rZ);
-                $('#v_model').attr("orientation", rX+"deg 0 0");
+                // $('#v_model').attr("orientation", rX+"deg 0 0");
+                $('#v_model').attr("orientation", "0deg "+rX+"deg 0deg");
                 // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
             });
         }
