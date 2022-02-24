@@ -191,12 +191,13 @@ $(function () {
                 var absolute = e.absolute;
                 var rZ = e.alpha;
                 var rY = 90 - e.beta;
-                var rX = e.gamma / 2;
+                var rX = - e.gamma;
         
                 $('#model_label').text(rX+", "+rY+", "+rZ);
-                $('#v_model').attr("orientation", rX+"deg 0 0");
+                // $('#v_model').attr("orientation", rX+"deg 0 0");
                 // $('#v_model').attr("orientation", "0deg "+rY+"deg 0deg");
                 // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
+                $('#v_model').attr("orientation", "0 0 "+rZ+"deg");
             });
         }
     }).catch(function (e) {
