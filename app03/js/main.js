@@ -16,9 +16,9 @@ $(function () {
 
     // console.log($('#v_model').attr("orientation"));
     // $('#v_model').attr("orientation", "90deg 10deg 10deg");
-    // let rX = 90;
-    // let rY = 90;
-    // let rZ = 90;
+    // let rX = -90;
+    // let rY = 0;
+    // let rZ = 0;
     // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
 
 
@@ -194,7 +194,8 @@ $(function () {
                 var rY = e.gamma;
         
                 $('#model_label').text(rX+", "+rY+", "+rZ);
-                $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
+                $('#v_model').attr("orientation", rX+"deg 0 0");
+                // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
             });
         }
     }).catch(function (e) {
