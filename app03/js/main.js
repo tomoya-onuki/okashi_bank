@@ -189,9 +189,11 @@ $(function () {
         if (response === 'granted') {
             window.addEventListener("deviceorientation", function (e) {
                 var absolute = e.absolute;
-                var rZ = e.alpha * 2;
-                var rY = 90 - e.beta ;
-                var rX = - e.gamma;
+                // var rZ = e.alpha * 2;
+                // var rY = 90 - e.beta ;
+                // var rX = - e.gamma;
+                var rZ = e.alpha * 3;
+                var rY = e.beta - 90;
         
                 // $('#v_model').attr("orientation", rX+"deg "+rY+"deg "+rZ+"deg");
                 $('#v_model').attr("camera-orbit", rZ+"deg "+rY+"deg 100%");
