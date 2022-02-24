@@ -190,7 +190,7 @@ $(function () {
             window.addEventListener("deviceorientation", function (e) {
                 var absolute = e.absolute;
                 var rZ = e.alpha * 2;
-                var rY = 45 - e.beta;
+                var rY = 90 - e.beta + 30;
                 var rX = - e.gamma;
         
                 $('#model_label').text(rX+", "+rY+", "+rZ);
