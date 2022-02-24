@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTTE お菓子銀行</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="./">
+            <img src="./res/header2.png" alt="">
+        </a>
+    </div>
+
+    <div id="ar_mov">
+    </div>
+    <div id="ar_share">share(仮ボタン)</div>
+
+
+    <div id="ar_modal">
+        <div id="ar_modal_esc">×</div>
+
+        <div class="block">
+            <div class="info">個数</div>
+            <select name="num_slct" id="num_slct"></select>
+        </div>
+
+        <div class="block">
+            <div class="stmt">お菓子を交換する</div>
+            <img class="code" src="./res/barcode.jpeg" alt="">
+            <div class="info">バーコードをコンビニのレジで提示してください</div>
+        </div>
+
+        <div class="block">
+            <div class="stmt">お菓子をシェアする</div>
+            <div style="width: 100vw;">
+                <img class="human" src="./res/human.png" alt="">
+                <img class="human" src="./res/human.png" alt="">
+                <img class="human" src="./res/human.png" alt="">
+                <img class="human" src="./res/human.png" alt="">
+                <img class="human" src="./res/human.png" alt="">
+            </div>
+            <div class="info" style="clear: both;"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

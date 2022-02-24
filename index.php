@@ -13,7 +13,7 @@
     </div>
 
     <div>
-        <a href="./moc/">モック</a>
+        <a href="./app02/">モック</a>
     </div>
 </body>
 </html>
