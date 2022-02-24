@@ -12,7 +12,7 @@ $(function () {
 
     $('#splash').fadeOut(2000);
     // initModel();
-
+    $('#v_model').activateAR();
 
 
 
@@ -188,7 +188,7 @@ $(function () {
                 var rX = e.beta;
                 var rY = e.gamma;
         
-                $('#model_label').text(rX+", "+rY+", "+rZ);
+                // $('#model_label').text(rX+", "+rY+", "+rZ);
             });
         }
     }).catch(function (e) {
