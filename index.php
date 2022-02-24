@@ -8,12 +8,8 @@
 </head>
 <body>
     <h1>お菓子銀行</h1>
-    <div>
-        <a href="./app/">開発中アプリ</a>
-    </div>
-
-    <div>
-        <a href="./app02/">モック</a>
-    </div>
+    <div><a href="./app/">開発中アプリ</a></div>
+    <div><a href="./app02/">モック</a></div>
+    <div><a href="./app03/">ARモドキ</a></div>
 </body>
 </html>
