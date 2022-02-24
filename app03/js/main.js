@@ -190,8 +190,8 @@ $(function () {
             window.addEventListener("deviceorientation", function (e) {
                 var absolute = e.absolute;
                 var rZ = e.alpha;
-                var rY = 90 -1 * e.beta;
-                var rX = e.gamma;
+                var rY = 90 - e.beta;
+                var rX = e.gamma / 2;
         
                 $('#model_label').text(rX+", "+rY+", "+rZ);
                 $('#v_model').attr("orientation", rX+"deg 0 0");
