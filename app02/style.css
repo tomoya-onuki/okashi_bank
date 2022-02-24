@@ -120,7 +120,7 @@ button {
     position: fixed;
     /* bottom: 40px;
     left: 20px; */
-    top: 100px;
+    top: 160px;
     left: 10px;
     width: 80px;
     height: 10px;
@@ -132,6 +132,8 @@ button {
     background: #847777;
     border: #847777 solid 1px;
     border-radius:20px;
+
+    z-index: 6;
 
 }
 
@@ -267,7 +269,7 @@ button {
     top: 30%;
     left: 50%; 
     transform: translate(-50%, 0%);
-    z-index: 4;
+    z-index: 10;
 
     width: 200px;
     text-align: center;
