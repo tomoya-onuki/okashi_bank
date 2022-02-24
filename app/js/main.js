@@ -7,7 +7,7 @@ $(function () {
     ];
 
     let model_idx = 0;
-    initModel();
+    // initModel();
 
     // $('.ar_model').each( function(idx) {
     //     // if (idx === 0) {
@@ -78,20 +78,21 @@ $(function () {
     let isDown = false;
     let _x = 0;
     let _y = 0;
-    $(window).on('mousedown', function (e) {
-        isDown = true;
-        _x = e.offsetX;
-        _y = e.offsetY;
-    })
+    $(window)
+        .on('mousedown', function (e) {
+            isDown = true;
+            _x = e.offsetX;
+            _y = e.offsetY;
+        })
         .on('mousemove', function (e) {
             if (isDown) {
                 let x = Number($('#move').attr('position').x);
                 let y = Number($('#move').attr('position').y);
-                
+
                 let dx = (e.offsetX - _x) / 1000;
                 let dy = (e.offsetY - _y) / 1000;
                 // console.log(dx, dy);
-                
+
                 let newPos = String(x + dx) + ' ' + String(y - dy) + ' 0';
                 console.log(newPos);
                 $('#move').attr('position', newPos);
