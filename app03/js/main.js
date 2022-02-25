@@ -91,8 +91,10 @@ $(function () {
                 let dist = Math.sqrt(Math.pow(e.pageX - share_btn_x, 2) + Math.pow(e.pageY - share_btn_y, 2));
                 if (dist < 80) {
                     isHover = true;
-                    // console.log("hogehogeho");
                     $('#share_btn').css('opacity', 0.2);
+                } else if(dist > 80) {
+                    isHover = false;
+                    $('#share_btn').css('opacity', 1);
                 }
             }
         })
@@ -125,10 +127,13 @@ $(function () {
                 let share_btn_y = Number($('#share_btn').css('top').replace('px', '')) + 40;
 
                 let dist = Math.sqrt(Math.pow(e.pageX - share_btn_x, 2) + Math.pow(e.pageY - share_btn_y, 2));
+
                 if (dist < 80) {
                     isHover = true;
-                    // console.log("hogehogeho");
                     $('#share_btn').css('opacity', 0.2);
+                } else if(dist > 80) {
+                    isHover = false;
+                    $('#share_btn').css('opacity', 1);
                 }
             }
         })
