@@ -1,12 +1,12 @@
 $(function () {
     const numOfModel = [
-        10, 5, 6
+        10, 5, 6, 2
     ];
     const model = [
-        'koala.glb', 'gahana.glb', 'pie.glb'
+        'koala.glb', 'gahana.glb', 'pie.glb', 'yukimi.glb'
     ];
     const label = [
-        'コアラのマーチ', 'ガーナ', 'パイの実'
+        'コアラのマーチ', 'ガーナ', 'パイの実', '雪見だいふく'
     ]
     let model_idx = 0;
 
